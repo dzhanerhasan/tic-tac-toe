@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #1F2937;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.board {
+    font-size: 48px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #881337;
+    border: solid 3px gray;
+}
+
+.board:nth-child(-n + 3) {
+    border-top: none;
+} 
+
+.board:nth-child(3n) {
+    border-right: none;
+}
+
+.board:nth-child(3n  - 2) {
+    border-left: none;
+} 
+
+.board:nth-child(n + 7) {
+    border-bottom: none;
+}
+
+
+.input-div {
+    padding: 15px;
+
+}
+
+
+#start-game {
+
+    background-color: #881337;
+}
+
+
+input {
+    padding: 10px;
+    margin: 0px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: solid 1px gray;
+}
+
+
+.again-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+#winner-text {
+    padding: 8px;
+    font-size: 48px;
+}
+
+
+#play-again, #start-game {
+    padding: 8px;
+    color: white;
+    font-size: 22px;
+    border:none;
+    border-radius: 10px;
+}
+
+
+#play-again {
+    background-color: #1F2937;
+}
